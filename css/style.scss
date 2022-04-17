@@ -1,0 +1,188 @@
+main {
+    height: 100vh;
+}
+header {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.header__nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    a {
+        color: #303030;
+        letter-spacing: 0.1vw;
+    }
+    li {
+        font-family: 'Baloo Da 2', cursive;
+        width: 100%;
+        text-align: center;
+    }
+    li:hover {
+        text-shadow: 0 0 1px black;
+        transition: 0.3s;
+    }
+}
+.header__nav--mobile,
+.header__nav--mobile_container {
+    display: none;
+}
+.burger-button,
+.burger-button--close,
+.search-button {
+    border-style: none;
+    background-color: unset;
+    display: none;
+}
+.mobile-burger-icon {
+    display: none;
+}
+.header__title-container {
+    justify-self: center;
+    text-align: center;
+    margin: 1rem 0;
+    h1, h2 {
+        font-weight: normal;
+    }
+    h1 {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 2.5vw;
+        margin-bottom: 0.5vh;
+    }
+    h2 {
+        font-family: 'Baloo Da 2', cursive;
+        margin-top: 0;
+        letter-spacing: 0.15vw;
+        font-size: 1.30vw;
+    }
+}
+.header__pages,
+.header__pages--mobile {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    place-content: space-evenly;
+    align-items: center;
+}
+.header__link,
+.header__title,
+.header__link--mobile {
+    text-decoration: none;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/acupuncture.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+}
+.hero__text-container {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .header__nav {
+        grid-template-columns: auto 1fr auto;
+    }
+    .header__pages {
+        display: none;
+    }
+    .burger-button,
+    .search-button {
+        display: block;
+        font-size: 5.5vw;
+        padding: 1rem;
+    }
+    .burger-button--close {
+        font-size: 5.5vw;
+        padding: 1rem;
+    }
+    .mobile-burger-icon,
+    .mobile-close-icon {
+        width: 20.36px;
+    }
+    .header__title-container {
+        h1 {
+            font-size: 6vw;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 3.5vw;
+            margin-bottom: 0;
+        }
+    }
+    // .header__nav--mobile,
+    .header__nav--mobile_container {
+        display: none;
+    }
+    .header__nav--mobile_container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 4;
+        position: absolute;
+    }
+    .header__pages--mobile {
+        display: block;
+        font-family: 'Baloo Da 2', sans-serif;
+        height: 35%;
+        position: absolute;
+        background-color: white;
+        z-index: 5;
+        margin-top: 0;
+        width: 100%;
+        padding-top: 5vh;
+        li {
+            padding-left: 10vw;
+            padding-bottom: 2rem;
+        }
+    }
+    .slide-out {
+        animation: slide-out 0.5s forwards;
+        @-webkit-keyframes slide-out {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% { 
+                transform: translateY(0%);    
+            }
+        }
+        @keyframes slide-out {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% { 
+                transform: translateY(0%);    
+            }
+        }
+    }
+    .slide-in {
+        animation: slide-in 0.5s forwards;
+        @-webkit-keyframes slide-in {
+            0% {
+                transform: translateY(0%);
+            }
+            100% { 
+                transform: translateY(-100%);    
+            }
+        }
+        @keyframes slide-in {
+            0% {
+                transform: translateY(0%);
+            }
+            100% { 
+                transform: translateY(-100%);    
+            }
+        }
+    }
+    .header__link--mobile {
+        color: #303030;
+    }
+}
