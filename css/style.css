@@ -17,6 +17,7 @@ header {
 .header__nav a {
   color: #303030;
   letter-spacing: 0.1vw;
+  text-decoration: unset;
 }
 
 .header__nav li {
@@ -62,12 +63,12 @@ header {
 .header__title-container h1 {
   font-family: 'Berkshire Swash', cursive;
   font-size: 2.5vw;
-  margin-bottom: 0.5vh;
+  margin: 0;
 }
 
 .header__title-container h2 {
   font-family: 'Baloo Da 2', cursive;
-  margin-top: 0;
+  margin: 0;
   letter-spacing: 0.15vw;
   font-size: 1.30vw;
 }
@@ -110,6 +111,307 @@ header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  width: 100%;
+}
+
+.hero__text-container .hero__title {
+  font-size: 6vw;
+  font-family: 'Berkshire Swash', cursive;
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  letter-spacing: 0.3vw;
+}
+
+.hero__text-container .hero__welcome,
+.hero__text-container .hero__subtext {
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 0.12vw;
+}
+
+.hero__text-container .hero__welcome {
+  font-size: 1.25rem;
+}
+
+.hero__text-container .hero__subtext {
+  font-size: 1.5vw;
+}
+
+.section__text {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #303030;
+  padding: 4rem 5rem;
+}
+
+.section__text h3, .section__text h4 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+.section__text .section__why--heading,
+.section__text .section__services--heading,
+.section__text .section__testimonials--heading {
+  font-size: 3vw;
+}
+
+.section__text .section__why--subtext {
+  font-size: 1.5vw;
+}
+
+.section__text .section__why--p {
+  font-family: 'Baloo Da 2', san-serif;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.grid-col-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+}
+
+.grid-col-2 .section__text-and-image {
+  text-align: center;
+}
+
+.grid-col-2 .section__treatments--heading {
+  margin-top: 1rem;
+  font-size: 1.75vw;
+  margin-bottom: 5rem;
+}
+
+.grid-col-2 ul {
+  font-family: 'Baloo Da 2', san-serif;
+  text-align: initial;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  word-spacing: 0.2rem;
+}
+
+.grid-col-2 li {
+  padding-bottom: 1.5rem;
+}
+
+.grid-col-2 .li-last {
+  padding-bottom: 0;
+}
+
+.grid-col-2 img {
+  width: 50%;
+}
+
+.services__container {
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 0 4rem 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.grid-col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col .grid-col__image-container {
+  width: 23rem;
+  height: 23rem;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.grid-col img {
+  height: 100%;
+}
+
+.grid-col h5 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.grid-col p {
+  font-family: 'Baloo Da 2', san-serif;
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
+}
+
+.grid-col h5, .grid-col p {
+  text-align: center;
+}
+
+.grid-col .grid-col__text-content {
+  width: 23rem;
+  margin: 0 auto;
+}
+
+.grid-col .grid-col__text-content p {
+  text-align: justify;
+}
+
+.all-services-btn {
+  background-color: #e08942;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid #e08942;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Baloo Da 2', san-serif;
+  word-spacing: 0.2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.all-services-btn:hover {
+  background-color: white;
+  color: #e08942;
+  font-weight: bold;
+}
+
+.testimonial__container {
+  padding: 4rem 0;
+  max-width: 1340px;
+  text-align: center;
+}
+
+.section__testimonials--heading {
+  margin-top: 0;
+}
+
+.testimonial {
+  font-family: 'Baloo Da 2', san-serif;
+  line-height: 1.5rem;
+  word-spacing: 0.2rem;
+  padding: 1rem 5rem;
+  padding-top: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: justify;
+}
+
+.testimonial address {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.splide__pagination {
+  bottom: 0;
+}
+
+.splide__pagination__page.is-active {
+  background: #303030;
+}
+
+.all-testimonials-btn {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  font-family: 'Baloo Da 2', san-serif;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #303030;
+  font-weight: bold;
+}
+
+.all-testimonials-btn:hover {
+  background-color: #303030;
+  color: white;
+}
+
+.insurance {
+  text-align: center;
+  font-family: 'Baloo Da 2', sans-serif;
+  word-spacing: 0.2rem;
+  border-top: 1px solid lightgray;
+}
+
+.insurance h3 {
+  font-size: 1.75vw;
+}
+
+.insurance p {
+  font-size: 1.15rem;
+}
+
+.insurance button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: #303030;
+  border: none;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #303030;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.insurance button:hover {
+  border: 2px solid #303030;
+  background-color: white;
+  color: #303030;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 912px) {
+  .section__text .section__why--heading {
+    font-size: 6vw;
+  }
+  .section__text .section__why--subtext {
+    font-size: 3vw;
+  }
+  .grid-col-2 {
+    display: block;
+    padding-top: 0;
+  }
+  .grid-col-2 img {
+    width: 25%;
+  }
+  .grid-col-2 .section__text-and-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .grid-col-2 .section__treatments--heading {
+    font-size: 3vw;
+    margin-bottom: 0;
+  }
+  .services__container {
+    max-width: calc(100% - 20vw);
+    text-align: center;
+  }
+  .grid-col {
+    grid-gap: 1rem;
+  }
+  .grid-col .grid-col__image-container {
+    width: 25vw;
+    height: 25vw;
+  }
+  .grid-col .grid-col__text-content {
+    width: 25vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -218,6 +520,48 @@ header {
   }
   .header__link--mobile {
     color: #303030;
+  }
+  .hero__text-container .hero__title {
+    font-size: 15vw;
+    margin: 3vh 0;
+  }
+  .hero__text-container .hero__welcome {
+    font-size: 1.25rem;
+  }
+  .hero__text-container .hero__subtext {
+    font-size: 7vw;
+  }
+  .section__text {
+    padding: 0 1rem;
+  }
+  .section__text .section__why--subtext {
+    font-size: 1rem;
+  }
+  .grid-col-2 .section__treatments--heading {
+    font-size: 1rem;
+  }
+  .section__text {
+    padding: 1rem;
+  }
+  .section__text .section__services--heading {
+    font-size: 6vw;
+  }
+  .services__container {
+    max-width: calc(100% - 8vw);
+  }
+  .grid-col {
+    display: block;
+  }
+  .grid-col .grid-col__image-container {
+    width: 90vw;
+    height: 90vw;
+  }
+  .grid-col .grid-col__text-content {
+    width: 90vw;
+    padding-bottom: 1rem;
+  }
+  .all-services-btn {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

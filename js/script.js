@@ -19,3 +19,12 @@ $('.burger-button--close, .header__nav--mobile_container').click(() => {
 $('.header__pages--mobile').click((event) => {
     event.stopPropagation();
 });
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {
+        type: 'loop',
+        autoplay: 'true',
+        interval: 10000
+    } );
+    splide.mount();
+} );
