@@ -540,6 +540,9 @@ header {
   .grid-col-2 .section__treatments--heading {
     font-size: 1rem;
   }
+  .section__why--p {
+    text-align: justify;
+  }
   .section__text {
     padding: 1rem;
   }
@@ -561,6 +564,9 @@ header {
     width: 90vw;
     padding-bottom: 1rem;
   }
+  .grid-col .grid-col__text-content p {
+    text-align: center;
+  }
   .all-services-btn {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -573,6 +579,7 @@ header {
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
         align-self: unset;
+    text-align: center;
   }
   .splide__arrow {
     top: unset;

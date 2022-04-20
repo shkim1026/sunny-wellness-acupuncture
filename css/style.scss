@@ -458,6 +458,9 @@ header {
             font-size: 1rem;
         }
     }
+    .section__why--p {
+        text-align: justify;
+    }
 
 
     .section__text {
@@ -479,6 +482,9 @@ header {
         .grid-col__text-content {
             width: 90vw;
             padding-bottom: 1rem;
+            p {
+                text-align: center;
+            }
         }
     }
     .all-services-btn {
@@ -492,6 +498,7 @@ header {
     .testimonial {
         padding: 0;
         align-self: unset;
+        text-align: center;
     }
     .splide__arrow {
         top: unset;
