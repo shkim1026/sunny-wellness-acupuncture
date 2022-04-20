@@ -543,7 +543,8 @@ header {
   .section__text {
     padding: 1rem;
   }
-  .section__text .section__services--heading {
+  .section__text .section__services--heading,
+  .section__text .section__testimonials--heading {
     font-size: 6vw;
   }
   .services__container {
@@ -562,6 +563,32 @@ header {
   }
   .all-services-btn {
     margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .section__testimonials--heading {
+    margin-top: 1rem;
+  }
+  .testimonial {
+    padding: 0;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+  }
+  .splide__arrow {
+    top: unset;
+    bottom: 0%;
+  }
+  .all-testimonials-btn {
+    margin-bottom: 2rem;
+  }
+  .insurance h3 {
+    font-size: 6vw;
+  }
+  .insurance p {
+    font-size: 1.05rem;
+  }
+  .insurance button {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
