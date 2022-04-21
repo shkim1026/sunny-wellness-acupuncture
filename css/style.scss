@@ -1,5 +1,5 @@
 main {
-    height: 100vh;
+    height: 100%;
 }
 header {
     max-width: 1800px;
@@ -46,14 +46,14 @@ header {
     }
     h1 {
         font-family: 'Berkshire Swash', cursive;
-        font-size: 2.5vw;
+        font-size: 2vw;
         margin: 0;
     }
     h2 {
         font-family: 'Baloo Da 2', cursive;
         margin: 0;
         letter-spacing: 0.15vw;
-        font-size: 1.30vw;
+        font-size: 1vw;
     }
 }
 .header__pages,
@@ -87,7 +87,7 @@ header {
     color: white;
     width: 100%;
     .hero__title {
-        font-size: 6vw;
+        font-size: 4vw;
         font-family: 'Berkshire Swash', cursive;
         margin-top: 5vh;
         margin-bottom: 6vh;
@@ -99,10 +99,10 @@ header {
         letter-spacing: 0.12vw;
     }
     .hero__welcome {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .hero__subtext {
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
 }
 .section__text {
@@ -299,6 +299,56 @@ header {
         font-weight: bold;
     }
 }
+.footer {
+    background-color: #303030;
+    text-align: center;
+    padding: 5rem 0;
+    h2, h3, address {
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: initial;
+    }
+    h2 {
+        font-family: 'Berkshire Swash', cursive;
+        letter-spacing: 0.1rem;
+        font-weight: initial;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        place-content: space-between;
+        width: 25rem;
+        margin: 0 auto;
+        text-transform: uppercase;
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Baloo Da 2', sans-serif;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: #e08942;
+        }
+    }
+    address {
+        line-height: 1.5rem;
+        font-family: 'Baloo Da 2', sans-serif;
+        padding-top: 2rem;
+    }
+    .footer-yelp {
+        color: red;
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     .grid-col {
@@ -538,6 +588,14 @@ header {
         }
         button {
             margin-bottom: 2rem;
+        }
+    }
+
+    .footer {
+        ul {
+            width: 100%;
+            display: block;
+            line-height: 3rem;
         }
     }
 }
