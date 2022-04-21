@@ -125,7 +125,7 @@ header {
     .section__why--p {
         font-family: 'Baloo Da 2', san-serif;
         line-height: 1.5rem;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 }
 .grid-col-2 {
@@ -144,7 +144,7 @@ header {
         font-family: 'Baloo Da 2', san-serif;
         text-align: initial;
         line-height: 2rem;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         padding-left: 1.5rem;
         word-spacing: 0.2rem;
     }
@@ -187,6 +187,7 @@ header {
         font-family: 'Baloo Da 2', san-serif;
         word-spacing: 0.2rem;
         line-height: 1.5rem;
+        font-size: 1.25rem;
     }
     h5,p {
         text-align: center;
@@ -228,6 +229,7 @@ header {
 }
 .testimonial {
     font-family: 'Baloo Da 2', san-serif;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     word-spacing: 0.2rem;
     padding: 1rem 5rem;
@@ -238,6 +240,9 @@ header {
         padding: 1rem 0;
         text-align: center;
     }
+}
+.splide__list {
+    transform-style: flat;
 }
 .splide__pagination {
     bottom: 0;
@@ -271,7 +276,7 @@ header {
         font-size: 1.75vw;
     }
     p {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
     button {
         padding: 1rem 2rem;
@@ -292,6 +297,18 @@ header {
         background-color: white;
         color: #303030;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-col {
+        .grid-col__image-container {
+            width: 20rem;
+            height: 20rem;
+        }
+        .grid-col__text-content {
+            width: 20rem;
+        }
     }
 }
 

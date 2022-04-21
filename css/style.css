@@ -161,7 +161,7 @@ header {
 .section__text .section__why--p {
   font-family: 'Baloo Da 2', san-serif;
   line-height: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .grid-col-2 {
@@ -186,7 +186,7 @@ header {
   font-family: 'Baloo Da 2', san-serif;
   text-align: initial;
   line-height: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   padding-left: 1.5rem;
   word-spacing: 0.2rem;
 }
@@ -240,6 +240,7 @@ header {
   font-family: 'Baloo Da 2', san-serif;
   word-spacing: 0.2rem;
   line-height: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .grid-col h5, .grid-col p {
@@ -288,6 +289,7 @@ header {
 
 .testimonial {
   font-family: 'Baloo Da 2', san-serif;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   word-spacing: 0.2rem;
   padding: 1rem 5rem;
@@ -301,6 +303,11 @@ header {
 .testimonial address {
   padding: 1rem 0;
   text-align: center;
+}
+
+.splide__list {
+  -webkit-transform-style: flat;
+          transform-style: flat;
 }
 
 .splide__pagination {
@@ -342,7 +349,7 @@ header {
 }
 
 .insurance p {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 .insurance button {
@@ -366,6 +373,16 @@ header {
   background-color: white;
   color: #303030;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-col .grid-col__image-container {
+    width: 20rem;
+    height: 20rem;
+  }
+  .grid-col .grid-col__text-content {
+    width: 20rem;
+  }
 }
 
 @media screen and (max-width: 912px) {
