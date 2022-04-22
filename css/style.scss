@@ -77,10 +77,12 @@ header {
 main,
 .parallax,
 .header,
-.width-100,
-.section__text,
 .footer {
     transform-style: preserve-3d;
+}
+.section__text,
+.width-100 {
+    transform-style: inherit;
 }
 
 
@@ -109,7 +111,7 @@ main,
     color: white;
     width: 100%;
     .hero__title {
-        font-size: 4vw;
+        font-size: 6vw;
         font-family: 'Berkshire Swash', cursive;
         margin-top: 5vh;
         margin-bottom: 6vh;
@@ -181,7 +183,7 @@ main,
     }
 }
 .services__container {
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
     padding: 0 0 4rem 0;
     border-top: 1px solid lightgray;
@@ -191,8 +193,8 @@ main,
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .grid-col__image-container {
-        width: 23rem;
-        height: 23rem;
+        width: 23vw;
+        height: 23vw;
         overflow: hidden;
         margin: 0 auto;
         border-radius: 1rem;
@@ -215,11 +217,17 @@ main,
         text-align: center;
     }
     .grid-col__text-content {
-        width: 23rem;
+        width: 23vw;
         margin: 0 auto;
         p {
             text-align: justify;
         }
+    }
+    .margin-left {
+        margin-left: auto;
+    }
+    .margin-right {
+        margin-right: auto;
     }
 }
 .all-services-btn {
@@ -316,8 +324,8 @@ main,
     }
     button:hover {
         border: 2px solid #303030;
-        background-color: white;
-        color: #303030;
+        background-color: #e08942;
+        color: white;
         font-weight: bold;
     }
 }
@@ -371,19 +379,6 @@ main,
     }
 }
 
-
-@media screen and (max-width: 1024px) {
-    .grid-col {
-        .grid-col__image-container {
-            width: 20rem;
-            height: 20rem;
-        }
-        .grid-col__text-content {
-            width: 20rem;
-        }
-    }
-}
-
 @media screen and (max-width: 912px) {
     .section__text {
         .section__why--heading {
@@ -421,6 +416,14 @@ main,
         }
         .grid-col__text-content {
             width: 25vw;
+            P {
+                text-align: center;
+            }
+        }
+    }
+    .insurance {
+        h3 {
+            font-size: 3vw;
         }
     }
 }

@@ -99,11 +99,15 @@ header {
 main,
 .parallax,
 .header,
-.width-100,
-.section__text,
 .footer {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+.section__text,
+.width-100 {
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
 }
 
 .width-100 {
@@ -137,7 +141,7 @@ main,
 }
 
 .hero__text-container .hero__title {
-  font-size: 4vw;
+  font-size: 6vw;
   font-family: 'Berkshire Swash', cursive;
   margin-top: 5vh;
   margin-bottom: 6vh;
@@ -226,7 +230,7 @@ main,
 }
 
 .services__container {
-  max-width: 1200px;
+  max-width: 100%;
   text-align: center;
   padding: 0 0 4rem 0;
   border-top: 1px solid lightgray;
@@ -241,8 +245,8 @@ main,
 }
 
 .grid-col .grid-col__image-container {
-  width: 23rem;
-  height: 23rem;
+  width: 23vw;
+  height: 23vw;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 1rem;
@@ -270,12 +274,20 @@ main,
 }
 
 .grid-col .grid-col__text-content {
-  width: 23rem;
+  width: 23vw;
   margin: 0 auto;
 }
 
 .grid-col .grid-col__text-content p {
   text-align: justify;
+}
+
+.grid-col .margin-left {
+  margin-left: auto;
+}
+
+.grid-col .margin-right {
+  margin-right: auto;
 }
 
 .all-services-btn {
@@ -392,8 +404,8 @@ main,
 
 .insurance button:hover {
   border: 2px solid #303030;
-  background-color: white;
-  color: #303030;
+  background-color: #e08942;
+  color: white;
   font-weight: bold;
 }
 
@@ -458,16 +470,6 @@ main,
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 1024px) {
-  .grid-col .grid-col__image-container {
-    width: 20rem;
-    height: 20rem;
-  }
-  .grid-col .grid-col__text-content {
-    width: 20rem;
-  }
-}
-
 @media screen and (max-width: 912px) {
   .section__text .section__why--heading {
     font-size: 6vw;
@@ -511,6 +513,12 @@ main,
   }
   .grid-col .grid-col__text-content {
     width: 25vw;
+  }
+  .grid-col .grid-col__text-content P {
+    text-align: center;
+  }
+  .insurance h3 {
+    font-size: 3vw;
   }
 }
 
