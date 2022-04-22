@@ -113,6 +113,8 @@ main,
 .width-100 {
   width: 100%;
   background-color: white;
+  -webkit-transform-style: flat;
+          transform-style: flat;
 }
 
 .hero {
@@ -470,6 +472,88 @@ main,
   margin-top: 1rem;
 }
 
+.banner__image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/chinese-text.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  position: relative;
+  -webkit-transform: translateZ(-1px) scale(1.5);
+          transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+  top: -10rem;
+}
+
+.banner__heading {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+}
+
+.section__col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 0;
+}
+
+.section__col .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__col .flex-row img {
+  width: 6rem;
+  margin-top: 4rem;
+}
+
+.section__col .flex-row .small-margin-top {
+  margin-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.section__col .flex-row .small-width {
+  width: 3rem;
+}
+
+.section__col .service__title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.section__col p, .section__col ul {
+  font-family: 'Baloo Da 2', san-serif;
+  word-spacing: 0.15rem;
+  line-height: 1.75rem;
+}
+
+.section__last {
+  border-bottom: none;
+}
+
 @media screen and (max-width: 912px) {
   .section__text .section__why--heading {
     font-size: 6vw;
@@ -712,6 +796,15 @@ main,
     width: 100%;
     display: block;
     line-height: 3rem;
+  }
+  .banner__heading {
+    font-size: 10vw;
+  }
+  .section__col {
+    display: block;
+  }
+  .section__col .flex-row .service__image {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

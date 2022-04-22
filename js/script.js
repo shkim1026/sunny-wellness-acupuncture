@@ -28,3 +28,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
 } );
+
+let banner = $('.banner__image')
+new simpleParallax($('.banner__image'));
