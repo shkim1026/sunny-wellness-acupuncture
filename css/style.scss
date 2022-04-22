@@ -11,6 +11,7 @@ header {
     a {
         color: #303030;
         letter-spacing: 0.1vw;
+        text-decoration: unset;
     }
     li {
         font-family: 'Baloo Da 2', cursive;
@@ -46,11 +47,11 @@ header {
     h1 {
         font-family: 'Berkshire Swash', cursive;
         font-size: 2.5vw;
-        margin-bottom: 0.5vh;
+        margin: 0;
     }
     h2 {
         font-family: 'Baloo Da 2', cursive;
-        margin-top: 0;
+        margin: 0;
         letter-spacing: 0.15vw;
         font-size: 1.30vw;
     }
@@ -84,7 +85,274 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    width: 100%;
+    .hero__title {
+        font-size: 6vw;
+        font-family: 'Berkshire Swash', cursive;
+        margin-top: 5vh;
+        margin-bottom: 6vh;
+        letter-spacing: 0.3vw;
+    }
+    .hero__welcome,
+    .hero__subtext {
+        font-family: 'Ubuntu', sans-serif;
+        letter-spacing: 0.12vw;
+    }
+    .hero__welcome {
+        font-size: 1.25rem;
+    }
+    .hero__subtext {
+        font-size: 1.5vw;
+    }
 }
+.section__text {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #303030;
+    padding: 4rem 5rem;
+    h3,h4 {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
+    .section__why--heading,
+    .section__services--heading,
+    .section__testimonials--heading {
+        font-size: 3vw;
+    }
+    .section__why--subtext {
+        font-size: 1.5vw;
+    }
+    .section__why--p {
+        font-family: 'Baloo Da 2', san-serif;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+    }
+}
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    .section__text-and-image {
+        text-align: center;
+    }
+    .section__treatments--heading {
+        margin-top: 1rem;
+        font-size: 1.75vw;
+        margin-bottom: 5rem;
+    }
+    ul {
+        font-family: 'Baloo Da 2', san-serif;
+        text-align: initial;
+        line-height: 2rem;
+        font-size: 1.25rem;
+        padding-left: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+    li {
+        padding-bottom: 1.5rem;
+    }
+    .li-last {
+        padding-bottom: 0;
+    }
+    img {
+        width: 50%;
+    }
+}
+.services__container {
+    max-width: 1200px;
+    text-align: center;
+    padding: 0 0 4rem 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.grid-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .grid-col__image-container {
+        width: 23rem;
+        height: 23rem;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 1rem;
+    }
+    img {
+        height: 100%;
+    }
+    h5 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1rem;
+        margin: 2rem;
+    }
+    p {
+        font-family: 'Baloo Da 2', san-serif;
+        word-spacing: 0.2rem;
+        line-height: 1.5rem;
+        font-size: 1.25rem;
+    }
+    h5,p {
+        text-align: center;
+    }
+    .grid-col__text-content {
+        width: 23rem;
+        margin: 0 auto;
+        p {
+            text-align: justify;
+        }
+    }
+}
+.all-services-btn {
+    background-color: #e08942;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid #e08942;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', san-serif;
+    word-spacing: 0.2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.all-services-btn:hover {
+    background-color: white;
+    color: #e08942;
+    font-weight: bold;
+}
+
+.testimonial__container {
+    padding: 4rem 0;
+    max-width: 1340px;
+    text-align: center;
+}
+.section__testimonials--heading {
+    margin-top: 0;
+}
+.testimonial {
+    font-family: 'Baloo Da 2', san-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    padding: 1rem 5rem;
+    padding-top: 0;
+    align-self: center;
+    text-align: justify;
+    address {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+.splide__list {
+    transform-style: flat;
+}
+.splide__pagination {
+    bottom: 0;
+}
+.splide__pagination__page.is-active {
+    background: #303030;
+}
+.all-testimonials-btn {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    font-family: 'Baloo Da 2', san-serif;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #303030;
+    font-weight: bold;
+}
+.all-testimonials-btn:hover {
+    background-color: #303030;
+    color: white;
+}
+
+.insurance {
+    text-align: center;
+    font-family: 'Baloo Da 2', sans-serif;
+    word-spacing: 0.2rem;
+    border-top: 1px solid lightgray;
+    h3 {
+        font-size: 1.75vw;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    button {
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        background-color: #303030;
+        border: none;
+        color: white;
+        margin-top: 2rem;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 2px solid #303030;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+    button:hover {
+        border: 2px solid #303030;
+        background-color: white;
+        color: #303030;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-col {
+        .grid-col__image-container {
+            width: 20rem;
+            height: 20rem;
+        }
+        .grid-col__text-content {
+            width: 20rem;
+        }
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .section__text {
+        .section__why--heading {
+            font-size: 6vw;
+        }
+        .section__why--subtext {
+            font-size: 3vw;
+        }
+    }
+    .grid-col-2 {
+        display: block;
+        padding-top: 0;
+        img {
+            width: 25%;
+        }
+        .section__text-and-image {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .section__treatments--heading {
+            font-size: 3vw;
+            margin-bottom: 0;
+        }
+    }
+    .services__container {
+        max-width: calc(100% - 20vw);
+        text-align: center;
+    }
+    .grid-col {
+        grid-gap: 1rem;
+        .grid-col__image-container {
+            width: 25vw;
+            height: 25vw;
+        }
+        .grid-col__text-content {
+            width: 25vw;
+        }
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     .header__nav {
@@ -103,6 +371,9 @@ header {
         font-size: 5.5vw;
         padding: 1rem;
     }
+    .mobile-burger-icon {
+        display: block;
+    }
     .mobile-burger-icon,
     .mobile-close-icon {
         width: 20.36px;
@@ -117,7 +388,6 @@ header {
             margin-bottom: 0;
         }
     }
-    // .header__nav--mobile,
     .header__nav--mobile_container {
         display: none;
     }
@@ -184,5 +454,90 @@ header {
     }
     .header__link--mobile {
         color: #303030;
+    }
+    .hero__text-container {
+        .hero__title {
+            font-size: 15vw;
+            margin: 3vh 0;
+        }
+        .hero__welcome {
+            font-size: 1.25rem;
+        }
+        .hero__subtext {
+            font-size: 7vw;
+        }
+    }
+    .section__text {
+        padding: 0 1rem;
+        .section__why--subtext {
+            font-size: 1rem;
+        }
+    }
+    .grid-col-2 {
+        .section__treatments--heading {
+            font-size: 1rem;
+        }
+    }
+    .section__why--p {
+        text-align: justify;
+    }
+
+
+    .section__text {
+        padding: 1rem;
+        .section__services--heading,
+        .section__testimonials--heading {
+            font-size: 6vw;
+        }
+    }
+    .services__container {
+        max-width: calc(100% - 8vw);;
+    }
+    .grid-col {
+        display: block;
+        .grid-col__image-container {
+            width: 90vw;
+            height: 90vw;
+        }
+        .grid-col__text-content {
+            width: 90vw;
+            padding-bottom: 1rem;
+            p {
+                text-align: center;
+            }
+        }
+    }
+    .all-services-btn {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .section__testimonials--heading {
+        margin-top: 1rem;
+    }
+    .testimonial {
+        padding: 0;
+        align-self: unset;
+        text-align: center;
+    }
+    .splide__arrow {
+        top: unset;
+        bottom: 0%;
+    }
+    .all-testimonials-btn {
+        margin-bottom: 2rem;
+    }
+
+
+    .insurance {
+        h3 {
+            font-size: 6vw;
+        }
+        p {
+            font-size: 1.05rem;
+        }
+        button {
+            margin-bottom: 2rem;
+        }
     }
 }
