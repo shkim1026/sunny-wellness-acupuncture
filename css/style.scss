@@ -1,5 +1,9 @@
-main {
-    height: 100%;
+.wrapper {
+    height: 100vh;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
 }
 header {
     max-width: 1800px;
@@ -69,6 +73,21 @@ header {
 .header__link--mobile {
     text-decoration: none;
 }
+
+main,
+.parallax,
+.header,
+.width-100,
+.section__text,
+.footer {
+    transform-style: preserve-3d;
+}
+
+
+.width-100 {
+    width: 100%;
+    background-color: white;
+}
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/acupuncture.jpg");
     height: 80vh;
@@ -77,6 +96,9 @@ header {
     background-position-y: center;
     background-size: cover;
     position: relative;
+    
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
 }
 .hero__text-container {
     position: absolute;
