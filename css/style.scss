@@ -1,5 +1,9 @@
-main {
+.wrapper {
     height: 100vh;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
 }
 header {
     max-width: 1800px;
@@ -46,14 +50,14 @@ header {
     }
     h1 {
         font-family: 'Berkshire Swash', cursive;
-        font-size: 2.5vw;
+        font-size: 2vw;
         margin: 0;
     }
     h2 {
         font-family: 'Baloo Da 2', cursive;
         margin: 0;
         letter-spacing: 0.15vw;
-        font-size: 1.30vw;
+        font-size: 1vw;
     }
 }
 .header__pages,
@@ -69,6 +73,23 @@ header {
 .header__link--mobile {
     text-decoration: none;
 }
+
+main,
+.parallax,
+.header,
+.footer {
+    transform-style: preserve-3d;
+}
+.section__text,
+.width-100 {
+    transform-style: inherit;
+}
+
+
+.width-100 {
+    width: 100%;
+    background-color: white;
+}
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/acupuncture.jpg");
     height: 80vh;
@@ -77,6 +98,9 @@ header {
     background-position-y: center;
     background-size: cover;
     position: relative;
+    
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
 }
 .hero__text-container {
     position: absolute;
@@ -99,10 +123,10 @@ header {
         letter-spacing: 0.12vw;
     }
     .hero__welcome {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .hero__subtext {
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
 }
 .section__text {
@@ -159,7 +183,7 @@ header {
     }
 }
 .services__container {
-    max-width: 1200px;
+    max-width: 100%;
     text-align: center;
     padding: 0 0 4rem 0;
     border-top: 1px solid lightgray;
@@ -169,8 +193,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .grid-col__image-container {
-        width: 23rem;
-        height: 23rem;
+        width: 23vw;
+        height: 23vw;
         overflow: hidden;
         margin: 0 auto;
         border-radius: 1rem;
@@ -193,11 +217,17 @@ header {
         text-align: center;
     }
     .grid-col__text-content {
-        width: 23rem;
+        width: 23vw;
         margin: 0 auto;
         p {
             text-align: justify;
         }
+    }
+    .margin-left {
+        margin-left: auto;
+    }
+    .margin-right {
+        margin-right: auto;
     }
 }
 .all-services-btn {
@@ -294,21 +324,58 @@ header {
     }
     button:hover {
         border: 2px solid #303030;
-        background-color: white;
-        color: #303030;
+        background-color: #e08942;
+        color: white;
         font-weight: bold;
     }
 }
-
-@media screen and (max-width: 1024px) {
-    .grid-col {
-        .grid-col__image-container {
-            width: 20rem;
-            height: 20rem;
+.footer {
+    background-color: #303030;
+    text-align: center;
+    padding: 5rem 0;
+    h2, h3, address {
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: initial;
+    }
+    h2 {
+        font-family: 'Berkshire Swash', cursive;
+        letter-spacing: 0.1rem;
+        font-weight: initial;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        place-content: space-between;
+        width: 25rem;
+        margin: 0 auto;
+        text-transform: uppercase;
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Baloo Da 2', sans-serif;
+            transition: 0.3s;
         }
-        .grid-col__text-content {
-            width: 20rem;
+        a:hover {
+            color: #e08942;
         }
+    }
+    address {
+        line-height: 1.5rem;
+        font-family: 'Baloo Da 2', sans-serif;
+        padding-top: 2rem;
+    }
+    .footer-yelp {
+        color: red;
+        padding: 0.5rem;
+        margin-top: 1rem;
     }
 }
 
@@ -349,6 +416,14 @@ header {
         }
         .grid-col__text-content {
             width: 25vw;
+            P {
+                text-align: center;
+            }
+        }
+    }
+    .insurance {
+        h3 {
+            font-size: 3vw;
         }
     }
 }
@@ -538,6 +613,14 @@ header {
         }
         button {
             margin-bottom: 2rem;
+        }
+    }
+
+    .footer {
+        ul {
+            width: 100%;
+            display: block;
+            line-height: 3rem;
         }
     }
 }
