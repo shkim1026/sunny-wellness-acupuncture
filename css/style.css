@@ -1,14 +1,7 @@
-.wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 2px;
-          perspective: 2px;
-}
-
 header {
   max-width: 1800px;
   margin: 0 auto;
+  z-index: 9999;
 }
 
 .header__nav {
@@ -96,25 +89,9 @@ header {
   text-decoration: none;
 }
 
-main,
-.parallax,
-.header,
-.footer {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.section__text,
-.width-100 {
-  -webkit-transform-style: inherit;
-          transform-style: inherit;
-}
-
 .width-100 {
   width: 100%;
   background-color: white;
-  -webkit-transform-style: flat;
-          transform-style: flat;
 }
 
 .hero {
@@ -126,8 +103,6 @@ main,
   background-position-y: center;
   background-size: cover;
   position: relative;
-  -webkit-transform: translateZ(-1px) scale(1.5);
-          transform: translateZ(-1px) scale(1.5);
   z-index: -1;
 }
 
@@ -472,19 +447,20 @@ main,
   margin-top: 1rem;
 }
 
+.banner {
+  position: relative;
+}
+
 .banner__image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/chinese-text.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/candle.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/candle.jpg");
   height: 30vh;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
   position: relative;
-  -webkit-transform: translateZ(-1px) scale(1.5);
-          transform: translateZ(-1px) scale(1.5);
   z-index: -1;
-  top: -10rem;
 }
 
 .banner__heading {
@@ -507,7 +483,7 @@ main,
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   border-bottom: 1px solid lightgray;
   padding: 1rem 0;
 }
