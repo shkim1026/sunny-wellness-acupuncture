@@ -1,13 +1,14 @@
-.wrapper {
-    height: 100vh;
+// .wrapper {
+//     height: 100vh;
     
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-}
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     perspective: 2px;
+// }
 header {
     max-width: 1800px;
     margin: 0 auto;
+    z-index: 9999;
 }
 .header__nav {
     display: grid;
@@ -74,21 +75,22 @@ header {
     text-decoration: none;
 }
 
-main,
-.parallax,
-.header,
-.footer {
-    transform-style: preserve-3d;
-}
-.section__text,
-.width-100 {
-    transform-style: inherit;
-}
+// main,
+// .parallax,
+// .header,
+// .footer {
+//     transform-style: preserve-3d;
+// }
+// .section__text,
+// .width-100 {
+//     transform-style: inherit;
+// }
 
 
 .width-100 {
     width: 100%;
     background-color: white;
+    //transform-style: flat;
 }
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/acupuncture.jpg");
@@ -98,9 +100,9 @@ main,
     background-position-y: center;
     background-size: cover;
     position: relative;
-    
-    transform: translateZ(-1px) scale(1.5);
     z-index: -1;
+    // transform: translateZ(-1px) scale(1.5);
+    // z-index: -1;
 }
 .hero__text-container {
     position: absolute;
@@ -379,6 +381,72 @@ main,
     }
 }
 
+// SERVICES
+.banner {
+    position: relative;
+}
+.banner__image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/candle.jpg");
+    height: 30vh; 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    // transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+    // top: -10rem;
+}
+.banner__heading {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+}
+.section__col {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+    border-bottom: 1px solid lightgray;
+    padding: 1rem 0;
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 6rem;
+            margin-top: 4rem;
+        }
+        .small-margin-top {
+            margin-top: 0rem;
+            padding-bottom: 1rem;
+        }
+        .small-width {
+            width: 3rem;
+        }
+    }
+    .service__title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    p, ul {
+        font-family: 'Baloo Da 2', san-serif;
+        word-spacing: 0.15rem;
+        line-height: 1.75rem;
+    }
+}
+.section__last {
+    border-bottom: none;
+}
+
+
 @media screen and (max-width: 912px) {
     .section__text {
         .section__why--heading {
@@ -622,5 +690,19 @@ main,
             display: block;
             line-height: 3rem;
         }
+    }
+
+    // SERVICES
+    .banner__heading {
+        font-size: 10vw;
+    }
+    .section__col {
+        display: block;
+        .flex-row {
+            .service__image {
+                margin-top: 0;
+            } 
+        }
+
     }
 }

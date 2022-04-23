@@ -28,3 +28,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
 } );
+
+$(window).scroll(function() {
+    let value = window.scrollY;
+    $('.hero').css({top: value * 0.5 + 'px'});
+    $('.banner__image').css({top: value * 0.5 + 'px'});
+})
