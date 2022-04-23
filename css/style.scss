@@ -426,7 +426,7 @@ header {
     text-align: center;
 }
 .banner--testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/medicine-love.jpg");
 }
 .testimonials__ul {
     list-style: none;
@@ -465,6 +465,36 @@ header {
     color: white;
     background-color: rgb(178, 0, 0);
     border: solid 2px rgb(178, 0, 0);
+}
+
+// ABOUT
+.banner--about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+}
+.grid--about {
+    grid-template-columns: 1fr 2fr;
+    img {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+    h3 {
+        text-align: initial;
+        word-spacing: 0.2rem;
+        margin-top: 0;
+    }
+    p {
+        font-family: 'Baloo Da 2', san-serif;
+        line-height: 1.5rem;
+        word-spacing: 0.2rem;
+    }
+}
+.insurance--about {
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 912px) {
     .section__text {
@@ -511,6 +541,25 @@ header {
     .insurance {
         h3 {
             font-size: 3vw;
+        }
+    }
+    .banner__heading {
+        font-size: 6vw;
+    }
+    .grid--about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        img {
+            width: 70%;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        p {
+            text-align: justify;
         }
     }
 }
@@ -723,5 +772,19 @@ header {
             } 
         }
 
+    }
+
+    //TESTIMONIALS
+    .center {
+        padding-bottom: 3rem;
+    }
+
+    // ABOUT
+    .grid--about {
+        display: block;
+        img {
+            margin-top: 2rem;
+            width: 100%;
+        }
     }
 }
