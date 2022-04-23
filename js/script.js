@@ -31,6 +31,5 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 $(window).scroll(function() {
     let value = window.scrollY;
-    $('.hero').css({top: value * 0.5 + 'px'});
-    $('.banner__image').css({top: value * 0.5 + 'px'});
+    $('.hero, .banner__image, .banner__image--testimonials').css({top: value * 0.5 + 'px'});
 })

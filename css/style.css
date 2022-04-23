@@ -316,11 +316,6 @@ header {
   text-align: center;
 }
 
-.splide__list {
-  -webkit-transform-style: flat;
-          transform-style: flat;
-}
-
 .splide__pagination {
   bottom: 0;
 }
@@ -452,8 +447,6 @@ header {
 }
 
 .banner__image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/candle.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/candle.jpg");
   height: 30vh;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -461,6 +454,11 @@ header {
   background-size: cover;
   position: relative;
   z-index: -1;
+}
+
+.banner--services {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/candle.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/candle.jpg");
 }
 
 .banner__heading {
@@ -528,6 +526,61 @@ header {
 
 .section__last {
   border-bottom: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.banner--testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/chinese-text.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+}
+
+.testimonials__ul {
+  list-style: none;
+  color: #303030;
+  font-family: 'Baloo Da 2', san-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  word-spacing: 0.2rem;
+  padding-left: 0;
+}
+
+.testimonials__ul li {
+  padding-bottom: 2rem;
+}
+
+.testimonials__ul address {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.testimonials__ul .last-testimonial {
+  border-bottom: none;
+}
+
+.testimonials__ul .last-li {
+  padding-bottom: 0;
+}
+
+.testimonials-link-btn {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #303030;
+  border: solid 2px #303030;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.testimonials-link-btn:hover {
+  color: white;
+  background-color: #b20000;
+  border: solid 2px #b20000;
 }
 
 @media screen and (max-width: 912px) {
