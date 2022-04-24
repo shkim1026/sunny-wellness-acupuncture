@@ -498,6 +498,36 @@ header {
         font-size: 1rem;
     }
 }
+
+// CONTACT US
+.banner--contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/medicine-label.jpg");
+}
+.grid--contact {
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    h3, h4 {
+        text-align: initial;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin: 0 0;
+    }
+    h4 {
+        margin-bottom: 0;
+    }
+    a {
+        font-family: 'Baloo Da 2', san-serif;
+        font-size: 1.25rem;
+        color: #303030;
+        border-bottom: 1px solid #303030;
+        line-height: 2.3rem;
+        text-decoration: none;
+    }
+}
 @media screen and (max-width: 912px) {
     .section__text {
         .section__why--heading {
@@ -562,6 +592,27 @@ header {
         }
         p {
             text-align: justify;
+        }
+    }
+
+    //CONTACT US
+    .grid--contact {
+        margin: 2rem 0;
+        text-align: center;
+        .flex-column {
+            text-align: initial;
+            width: 75%;
+            margin: 0 auto;
+        }
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        a {
+            text-align: initial;
+        }
+        .google-map {
+            width: 75%;
         }
     }
 }
@@ -755,6 +806,7 @@ header {
     }
 
     .footer {
+        padding: 5rem 1rem;
         ul {
             width: 100%;
             display: block;
@@ -788,6 +840,18 @@ header {
         img {
             margin-top: 2rem;
             margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+
+    //CONTACT US
+    .grid--contact {
+        margin: 2rem 0;
+        .google-map {
+            width: 100%;
+            height: 40vh;
+        }
+        .flex-column {
             width: 100%;
         }
     }

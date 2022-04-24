@@ -620,6 +620,46 @@ header {
   font-size: 1rem;
 }
 
+.banner--contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/medicine-label.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/medicine-label.jpg");
+}
+
+.grid--contact .flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid--contact h3, .grid--contact h4 {
+  text-align: initial;
+}
+
+.grid--contact h3 {
+  font-size: 1.5rem;
+  margin: 0 0;
+}
+
+.grid--contact h4 {
+  margin-bottom: 0;
+}
+
+.grid--contact a {
+  font-family: 'Baloo Da 2', san-serif;
+  font-size: 1.25rem;
+  color: #303030;
+  border-bottom: 1px solid #303030;
+  line-height: 2.3rem;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 912px) {
   .section__text .section__why--heading {
     font-size: 6vw;
@@ -695,6 +735,25 @@ header {
   }
   .grid--about p {
     text-align: justify;
+  }
+  .grid--contact {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .grid--contact .flex-column {
+    text-align: initial;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .grid--contact h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .grid--contact a {
+    text-align: initial;
+  }
+  .grid--contact .google-map {
+    width: 75%;
   }
 }
 
@@ -884,6 +943,9 @@ header {
   .insurance button {
     margin-bottom: 2rem;
   }
+  .footer {
+    padding: 5rem 1rem;
+  }
   .footer ul {
     width: 100%;
     display: block;
@@ -907,6 +969,16 @@ header {
   .grid--about img {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+  }
+  .grid--contact {
+    margin: 2rem 0;
+  }
+  .grid--contact .google-map {
+    width: 100%;
+    height: 40vh;
+  }
+  .grid--contact .flex-column {
     width: 100%;
   }
 }
