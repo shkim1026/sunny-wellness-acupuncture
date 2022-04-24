@@ -474,6 +474,8 @@ header {
   font-size: 3vw;
   letter-spacing: 0.15rem;
   font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 5px black;
 }
 
 .section__col {
@@ -533,8 +535,8 @@ header {
 }
 
 .banner--testimonials {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/chinese-text.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/medicine-love.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/medicine-love.jpg");
 }
 
 .testimonials__ul {
@@ -581,6 +583,41 @@ header {
   color: white;
   background-color: #b20000;
   border: solid 2px #b20000;
+}
+
+.banner--about {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/chinese-text.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/chinese-text.jpg");
+}
+
+.grid--about {
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.grid--about img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.grid--about h3 {
+  text-align: initial;
+  word-spacing: 0.2rem;
+  margin-top: 0;
+}
+
+.grid--about p {
+  font-family: 'Baloo Da 2', san-serif;
+  line-height: 1.5rem;
+  word-spacing: 0.2rem;
+}
+
+.insurance--about h3 {
+  font-size: 1.5rem;
+}
+
+.insurance--about p {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 912px) {
@@ -632,6 +669,32 @@ header {
   }
   .insurance h3 {
     font-size: 3vw;
+  }
+  .banner__heading {
+    font-size: 6vw;
+  }
+  .grid--about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .grid--about img {
+    width: 70%;
+  }
+  .grid--about h3 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .grid--about p {
+    text-align: justify;
   }
 }
 
@@ -834,6 +897,17 @@ header {
   }
   .section__col .flex-row .service__image {
     margin-top: 0;
+  }
+  .center {
+    padding-bottom: 3rem;
+  }
+  .grid--about {
+    grid-gap: 0;
+  }
+  .grid--about img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
