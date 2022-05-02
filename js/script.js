@@ -24,6 +24,7 @@ $('.burger-button--close, .header__nav--mobile_container').click(() => {
     });
 });
 
+
 $('.header__pages--mobile').click((event) => {
     event.stopPropagation();
 });

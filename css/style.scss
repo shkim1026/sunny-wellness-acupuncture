@@ -26,8 +26,7 @@ header {
     display: none;
 }
 .burger-button,
-.burger-button--close,
-.search-button {
+.burger-button--close {
     border-style: none;
     background-color: unset;
     display: none;
@@ -68,6 +67,7 @@ header {
     text-decoration: none;
 }
 
+// MAIN
 .width-100 {
     width: 100%;
     background-color: white;
@@ -256,6 +256,9 @@ header {
 }
 .splide__pagination__page.is-active {
     background: #303030;
+}
+.splide__list {
+    transform-style: flat;
 }
 .all-testimonials-btn {
     padding: 1rem 2rem;
@@ -486,8 +489,8 @@ header {
     }
     p {
         font-family: 'Baloo Da 2', san-serif;
-        line-height: 1.5rem;
-        word-spacing: 0.2rem;
+        word-spacing: 0.15rem;
+        line-height: 1.75rem;
     }
 }
 .insurance--about {
@@ -620,18 +623,24 @@ header {
 
 @media screen and (max-width: 480px) {
     .header__nav {
-        grid-template-columns: auto 1fr auto;
+        display: block;
+        position: relative;
     }
     .header__pages {
         display: none;
     }
     .burger-button,
-    .search-button {
+    .burger-button--close {
         display: block;
+        position: absolute;
         font-size: 5.5vw;
         padding: 1rem;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
     }
     .burger-button--close {
+        display: none;
         font-size: 5.5vw;
         padding: 1rem;
     }
@@ -748,7 +757,7 @@ header {
 
 
     .section__text {
-        padding: 1rem;
+        padding: 2rem 1rem;
         .section__services--heading,
         .section__testimonials--heading {
             font-size: 6vw;
