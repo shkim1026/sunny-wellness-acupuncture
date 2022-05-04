@@ -1,7 +1,16 @@
+.stop-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 header {
-  max-width: 1800px;
-  margin: 0 auto;
   z-index: 9999;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header__nav {
@@ -9,11 +18,13 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .header__nav a {
   color: #303030;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.1rem;
   text-decoration: unset;
 }
 
@@ -58,15 +69,15 @@ header {
 
 .header__title-container h1 {
   font-family: 'Berkshire Swash', cursive;
-  font-size: 2vw;
+  font-size: 1.75rem;
   margin: 0;
 }
 
 .header__title-container h2 {
   font-family: 'Baloo Da 2', cursive;
   margin: 0;
-  letter-spacing: 0.15vw;
-  font-size: 1vw;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
 }
 
 .header__pages,
@@ -96,7 +107,7 @@ header {
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/acupuncture.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/acupuncture.jpg");
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -117,25 +128,25 @@ header {
 }
 
 .hero__text-container .hero__title {
-  font-size: 6vw;
+  font-size: 5rem;
   font-family: 'Berkshire Swash', cursive;
   margin-top: 5vh;
   margin-bottom: 6vh;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.3rem;
 }
 
 .hero__text-container .hero__welcome,
 .hero__text-container .hero__subtext {
   font-family: 'Ubuntu', sans-serif;
-  letter-spacing: 0.12vw;
+  letter-spacing: 0.12rem;
 }
 
 .hero__text-container .hero__welcome {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .hero__text-container .hero__subtext {
-  font-size: 1vw;
+  font-size: 2rem;
 }
 
 .section__text {
@@ -153,11 +164,11 @@ header {
 .section__text .section__why--heading,
 .section__text .section__services--heading,
 .section__text .section__testimonials--heading {
-  font-size: 3vw;
+  font-size: 4rem;
 }
 
 .section__text .section__why--subtext {
-  font-size: 1.5vw;
+  font-size: 2rem;
 }
 
 .section__text .section__why--p {
@@ -180,7 +191,7 @@ header {
 
 .grid-col-2 .section__treatments--heading {
   margin-top: 1rem;
-  font-size: 1.75vw;
+  font-size: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -355,7 +366,7 @@ header {
 }
 
 .insurance h3 {
-  font-size: 1.75vw;
+  font-size: 2rem;
 }
 
 .insurance p {
@@ -451,7 +462,7 @@ header {
 }
 
 .banner__image {
-  height: 30vh;
+  height: 40vh;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -475,11 +486,12 @@ header {
   color: white;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 3vw;
+  font-size: 5rem;
   letter-spacing: 0.15rem;
   font-weight: bold;
   margin: 0;
   text-shadow: 0 0 5px black;
+  padding-top: 8vh;
 }
 
 .section__col {
@@ -666,10 +678,10 @@ header {
 
 @media screen and (max-width: 912px) {
   .section__text .section__why--heading {
-    font-size: 6vw;
+    font-size: 3rem;
   }
   .section__text .section__why--subtext {
-    font-size: 3vw;
+    font-size: 1.75rem;
   }
   .grid-col-2 {
     display: block;
@@ -691,7 +703,7 @@ header {
             align-items: center;
   }
   .grid-col-2 .section__treatments--heading {
-    font-size: 3vw;
+    font-size: 1.75rem;
     margin-bottom: 0;
   }
   .services__container {
@@ -712,10 +724,10 @@ header {
     text-align: center;
   }
   .insurance h3 {
-    font-size: 3vw;
+    font-size: 1.75rem;
   }
   .banner__heading {
-    font-size: 6vw;
+    font-size: 4rem;
   }
   .grid--about {
     display: -webkit-box;
@@ -761,7 +773,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__nav {
     display: block;
     position: relative;
@@ -774,7 +786,7 @@ header {
     display: block;
     position: absolute;
     font-size: 5.5vw;
-    padding: 1rem;
+    padding: 0.5rem;
     top: 50%;
     left: 0;
     -webkit-transform: translate(0%, -50%);
@@ -804,7 +816,7 @@ header {
     display: none;
   }
   .header__nav--mobile_container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
@@ -878,7 +890,7 @@ header {
     color: #303030;
   }
   .hero__text-container .hero__title {
-    font-size: 15vw;
+    font-size: 14vw;
     margin: 3vh 0;
   }
   .hero__text-container .hero__welcome {
@@ -888,23 +900,21 @@ header {
     font-size: 7vw;
   }
   .section__text {
-    padding: 0 1rem;
+    padding: 2rem 1rem;
   }
   .section__text .section__why--subtext {
     font-size: 1rem;
+  }
+  .section__text .section__why--heading,
+  .section__text .section__services--heading,
+  .section__text .section__testimonials--heading {
+    font-size: 2rem;
   }
   .grid-col-2 .section__treatments--heading {
     font-size: 1rem;
   }
   .section__why--p {
     text-align: justify;
-  }
-  .section__text {
-    padding: 2rem 1rem;
-  }
-  .section__text .section__services--heading,
-  .section__text .section__testimonials--heading {
-    font-size: 6vw;
   }
   .services__container {
     max-width: calc(100% - 8vw);
@@ -944,9 +954,6 @@ header {
   .all-testimonials-btn {
     margin-bottom: 2rem;
   }
-  .insurance h3 {
-    font-size: 6vw;
-  }
   .insurance p {
     font-size: 1.05rem;
   }
@@ -962,7 +969,7 @@ header {
     line-height: 3rem;
   }
   .banner__heading {
-    font-size: 10vw;
+    font-size: 3rem;
   }
   .section__col {
     display: block;
@@ -984,7 +991,7 @@ header {
   .grid--contact {
     margin: 2rem 0;
   }
-  .grid--contact .google-map {
+  .grid--contact iframe {
     width: 100%;
     height: 40vh;
   }

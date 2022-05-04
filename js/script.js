@@ -4,10 +4,7 @@ $('.burger-button').click(() => {
     $('.header__nav--mobile_container').show();
     $('.header__nav--mobile').show();
     $('.header__pages--mobile').addClass('slide-out').removeClass('slide-in');
-    $('html, body').css({
-        overflow: 'hidden',
-        height: '100%'
-    });
+    $('html, body').addClass('stop-scroll');
 });
 
 $('.burger-button--close, .header__nav--mobile_container').click(() => {
@@ -18,10 +15,7 @@ $('.burger-button--close, .header__nav--mobile_container').click(() => {
     function hideBlkBackground() {
         $('.header__nav--mobile_container').hide();
     }
-    $('html, body').css({
-        overflow: 'initial',
-        height: 'auto'
-    });
+    $('html, body').removeClass('stop-scroll');
 });
 
 
