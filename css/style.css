@@ -127,17 +127,21 @@ header {
   width: 100%;
 }
 
+.hero__text-container p {
+  text-shadow: 0 0 5px black;
+}
+
 .hero__text-container .hero__title {
   font-size: 5rem;
   font-family: 'Berkshire Swash', cursive;
   margin-top: 5vh;
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
   letter-spacing: 0.3rem;
 }
 
 .hero__text-container .hero__welcome,
 .hero__text-container .hero__subtext {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Baloo Da 2', sans-serif;
   letter-spacing: 0.12rem;
 }
 
@@ -245,7 +249,7 @@ header {
 
 .grid-col h5 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 2rem;
 }
 
