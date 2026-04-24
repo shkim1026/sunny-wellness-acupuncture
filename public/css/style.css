@@ -299,7 +299,6 @@ header {
 .all-services-btn:hover {
   background-color: white;
   color: #e08942;
-  font-weight: bold;
 }
 
 .testimonial__container {
@@ -360,6 +359,7 @@ header {
 .all-testimonials-btn:hover {
   background-color: #303030;
   color: white;
+  font-weight: bold;
 }
 
 .insurance {
@@ -397,7 +397,6 @@ header {
   border: 2px solid #303030;
   background-color: #e08942;
   color: white;
-  font-weight: bold;
 }
 
 .footer {
