@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ParallaxHero from "@/src/components/HeroBanner";
+import TestimonialSlider from "@/src/components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <ParallaxHero />
 
       <section className="w-full bg-white">
-        <div className="max-w-[1200px] mx-auto text-[#303030] py-8 px-4 md:py-16 md:px-20">
+        <div className="max-w-[1200px] mx-auto text-[#303030] py-8 md:py-16">
           <h3 className="font-ubuntu font-bold text-center text-[2rem] md:text-[3rem] min-[913px]:text-[4rem] my-[1em]">
             Why Acupuncture?
           </h3>
@@ -28,7 +29,7 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="max-w-[1200px] mx-auto text-[#303030] px-4 pb-8 pt-0 md:px-20 md:pb-16 min-[913px]:pt-16 block min-[913px]:grid min-[913px]:grid-cols-[1fr_2fr] min-[913px]:gap-8">
+        <div className="max-w-[1200px] mx-auto text-[#303030] pb-8 pt-0 md:pb-16 min-[913px]:pt-16 block min-[913px]:grid min-[913px]:grid-cols-[1fr_2fr] min-[913px]:gap-8">
           <div className="text-center flex flex-col-reverse items-center min-[913px]:block">
             <h3 className="font-ubuntu font-bold text-center mt-4 mb-0 text-[1rem] md:text-[1.75rem] min-[913px]:text-[2rem] min-[913px]:mb-20">
               Acupuncture can help with:
@@ -41,7 +42,7 @@ export default function Home() {
               className="w-1/4 min-[913px]:w-1/2 h-auto mx-auto"
             />
           </div>
-          <ul className="list-disc font-baloo text-left leading-[2rem] text-[1.25rem] pl-6 [word-spacing:0.2rem] my-[1em] [&_li]:pb-6 last:[&_li]:pb-0">
+          <ul className="list-disc font-baloo text-left leading-[2rem] text-[1.25rem] pl-6 [word-spacing:0.2rem] my-[1em] [&_li]:pb-6 [&_li:last-child]:pb-0">
             <li>
               <strong>Pain Management:</strong> Headaches, Back pain, Neck
               Pain, Shoulder Pain, Knee Pain, Neuralgia, Injury, Fibromyalgia,
@@ -82,13 +83,13 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="mx-auto text-[#303030] text-center border-y border-[lightgray] max-w-[calc(100%-8vw)] md:max-w-[calc(100%-0vw)] min-[913px]:max-w-[1200px] py-8 px-4 md:pt-0 md:pb-16 md:px-20">
+        <div className="mx-auto text-[#303030] text-center border-y border-[lightgray] max-w-full py-8 md:pt-0 md:pb-16">
           <h3 className="font-ubuntu font-bold text-center text-[2rem] md:text-[3rem] my-[1em]">
             Services
           </h3>
-          <div className="block md:grid md:grid-cols-3 md:gap-3 min-[913px]:gap-0">
+          <div className="block md:grid md:grid-cols-3 md:gap-3 min-[913px]:gap-0 max-w-[1920px] mx-auto">
             <div className="md:ml-auto">
-              <div className="relative w-[90vw] h-[90vw] md:w-[23vw] md:h-[23vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
+              <div className="relative w-[90vw] h-[90vw] md:w-[20vw] md:h-[20vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
                 <Image
                   src="/images/acupuncturist.webp"
                   alt="Picture of acupuncturist treating patient"
@@ -97,7 +98,7 @@ export default function Home() {
                   className="object-cover object-left"
                 />
               </div>
-              <div className="w-[90vw] pb-4 md:w-[23vw] md:pb-0 min-[913px]:w-[23vw] mx-auto">
+              <div className="w-[90vw] pb-4 md:w-[20vw] md:pb-0 min-[913px]:w-[20vw] mx-auto">
                 <h5 className="font-ubuntu font-bold text-[1.5rem] m-8 text-center">
                   Acupuncture
                 </h5>
@@ -111,7 +112,7 @@ export default function Home() {
             </div>
 
             <div>
-              <div className="relative w-[90vw] h-[90vw] md:w-[23vw] md:h-[23vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
+              <div className="relative w-[90vw] h-[90vw] md:w-[20vw] md:h-[20vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
                 <Image
                   src="/images/cupping.webp"
                   alt="Picture of patient receiving cupping treatment"
@@ -120,7 +121,7 @@ export default function Home() {
                   className="object-cover object-left"
                 />
               </div>
-              <div className="w-[90vw] pb-4 md:w-[23vw] md:pb-0 min-[913px]:w-[23vw] mx-auto">
+              <div className="w-[90vw] pb-4 md:w-[20vw] md:pb-0 min-[913px]:w-[23vw] mx-auto">
                 <h5 className="font-ubuntu font-bold text-[1.5rem] m-8 text-center">
                   Cupping
                 </h5>
@@ -135,7 +136,7 @@ export default function Home() {
             </div>
 
             <div className="md:mr-auto">
-              <div className="relative w-[90vw] h-[90vw] md:w-[23vw] md:h-[23vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
+              <div className="relative w-[90vw] h-[90vw] md:w-[20vw] md:h-[20vw] min-[913px]:w-[23vw] min-[913px]:h-[23vw] overflow-hidden mx-auto rounded-[1rem]">
                 <Image
                   src="/images/chinese-herbal-medicine.webp"
                   alt="Picture of traditional chinese herbal medicine ingredients"
@@ -144,7 +145,7 @@ export default function Home() {
                   className="object-cover object-left"
                 />
               </div>
-              <div className="w-[90vw] pb-4 md:w-[23vw] md:pb-0 min-[913px]:w-[23vw] mx-auto">
+              <div className="w-[90vw] pb-4 md:w-[20vw] md:pb-0 min-[913px]:w-[23vw] mx-auto">
                 <h5 className="font-ubuntu font-bold text-[1.5rem] m-8 text-center">
                   Chinese Herbal Medicine
                 </h5>
@@ -165,6 +166,29 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <TestimonialSlider />
+
+      <section className="w-full border-y border-[lightgray]">
+        <div className="mx-auto text-[#303030] text-center max-w-[1200px] py-8 md:pt-0 md:pb-16">
+          <h3 className="font-ubuntu font-bold text-[2rem] md:text-[3rem] my-[1em]">
+            PPO Health Insurance Accepted
+          </h3>
+          <p className="text-[1.25rem]">
+            Please contact us if you are not sure of your coverage. We will be
+            happy to verify your benefits for you.
+          </p>
+          <p className="text-[1.25rem]">
+            Please provide your <strong>Insurance ID number, Insured Person&apos;s Name, Insured Person&apos;s Date of Birth</strong> and a copy of your <strong>Health Insurance card (both front and back side).</strong>
+          </p>
+          <a href="contact.html">
+            <button className="bg-[#e08942] rounded-[2rem] py-4 px-8 border-2 border-[#e08942] text-white uppercase font-baloo [word-spacing:0.2rem] mt-4 mb-8 md:mt-12 md:mb-0 cursor-pointer transition duration-300 hover:bg-white hover:text-[#e08942]">
+              Contact Us
+            </button>
+          </a>
+        </div>
+      </section>
+
     </main>
   );
 }

@@ -148,8 +148,8 @@ header {
   bottom: 0;
 }
 
-.splide__pagination__page.is-active {
-  background: #303030;
+.splide .splide__pagination__page.is-active {
+  background: #171717;
 }
 
 .splide__list {
