@@ -40,8 +40,13 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <h2 className="font-berkshire font-normal tracking-[0.1rem] text-[2rem] mt-12 mb-4 text-white">
-        Sun Wellness Acupuncture
+      <h2 className="font-normal tracking-[0.1rem] text-[2rem] mt-12 mb-4 text-white">
+        <Link 
+          href="/"
+          className="font-berkshire text-white no-underline font-baloo transition duration-300 hover:text-[#e08942]"
+        >
+          Sun Wellness Acupuncture
+        </Link>
       </h2>
       <h3 className="font-ubuntu font-normal text-[1rem] my-[1em] text-white">
         Chinese Acupuncture &amp; Herbal Clinic
