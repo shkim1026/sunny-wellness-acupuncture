@@ -1,13 +1,14 @@
 import Image from "next/image";
-import ParallaxHero from "@/src/components/HeroBanner";
+import Link from "next/link";
+import HeroBanner from "@/src/components/HeroBanner";
 import TestimonialSlider from "@/src/components/TestimonialSlider";
 
 export default function Home() {
   return (
-    <main>
-      <ParallaxHero />
+    <>
+      <HeroBanner />
 
-      <section className="w-full bg-white">
+      <section className="w-full bg-white md:px-16">
         <div className="max-w-[1200px] mx-auto text-[#303030] py-8 md:py-16">
           <h3 className="font-ubuntu font-bold text-center text-[2rem] md:text-[3rem] min-[913px]:text-[4rem] my-[1em]">
             Why Acupuncture?
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-white">
+      <section className="w-full bg-white md:px-16">
         <div className="max-w-[1200px] mx-auto text-[#303030] pb-8 pt-0 md:pb-16 min-[913px]:pt-16 block min-[913px]:grid min-[913px]:grid-cols-[1fr_2fr] min-[913px]:gap-8">
           <div className="text-center flex flex-col-reverse items-center min-[913px]:block">
             <h3 className="font-ubuntu font-bold text-center mt-4 mb-0 text-[1rem] md:text-[1.75rem] min-[913px]:text-[2rem] min-[913px]:mb-20">
@@ -169,7 +170,7 @@ export default function Home() {
 
       <TestimonialSlider />
 
-      <section className="w-full border-y border-[lightgray]">
+      <section className="w-full border-y border-[lightgray] md:px-16">
         <div className="mx-auto text-[#303030] text-center max-w-[1200px] py-8 md:pt-0 md:pb-16">
           <h3 className="font-ubuntu font-bold text-[2rem] md:text-[3rem] my-[1em]">
             PPO Health Insurance Accepted
@@ -181,14 +182,13 @@ export default function Home() {
           <p className="text-[1.25rem]">
             Please provide your <strong>Insurance ID number, Insured Person&apos;s Name, Insured Person&apos;s Date of Birth</strong> and a copy of your <strong>Health Insurance card (both front and back side).</strong>
           </p>
-          <a href="contact.html">
+          <Link href="contact.html">
             <button className="bg-[#e08942] rounded-[2rem] py-4 px-8 border-2 border-[#e08942] text-white uppercase font-baloo [word-spacing:0.2rem] mt-4 mb-8 md:mt-12 md:mb-0 cursor-pointer transition duration-300 hover:bg-white hover:text-[#e08942]">
               Contact Us
             </button>
-          </a>
+          </Link>
         </div>
       </section>
-
-    </main>
+    </>
   );
 }

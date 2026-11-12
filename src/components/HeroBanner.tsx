@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 
-export default function ParallaxHero() {
+export default function HeroBanner() {
   const containerRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
 

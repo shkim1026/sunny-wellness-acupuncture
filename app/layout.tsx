@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Baloo_Da_2, Berkshire_Swash, Ubuntu } from "next/font/google";
 import "./globals.css";
 import "../styles/style.css";
+import Footer from "@/src/components/Footer";
 
 const balooDa2 = Baloo_Da_2({
   variable: "--font-baloo-da-2",
@@ -35,7 +36,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${balooDa2.variable} ${berkshireSwash.variable} ${ubuntu.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
