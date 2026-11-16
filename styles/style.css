@@ -1,0 +1,25 @@
+.splide__pagination {
+  bottom: 0;
+  gap: 0.35rem;
+}
+
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+}
+
+.splide .splide__pagination__page.is-active {
+  background: #c44d2b;
+}
+
+.splide__list {
+  transform-style: flat;
+}
+
+@media screen and (max-width: 767px) {
+  .splide__arrow {
+    top: unset;
+    bottom: 0%;
+  }
+}
