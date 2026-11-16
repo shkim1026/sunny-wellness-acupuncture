@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
 
+export const dynamic = "force-static";
+
 export const alt =
   "Sun Wellness Acupuncture — Chinese Acupuncture & Herbal Clinic in Koreatown, Los Angeles";
 export const size = {
