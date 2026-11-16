@@ -19,3 +19,50 @@ body {
   color: var(--foreground);
   font-family: var(--font-baloo-da-2), Arial, Helvetica, sans-serif;
 }
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.slide-out {
+  animation: slide-out 0.35s ease-out forwards;
+}
+
+.slide-in {
+  animation: slide-in 0.35s ease-in forwards;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #c44d2b;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

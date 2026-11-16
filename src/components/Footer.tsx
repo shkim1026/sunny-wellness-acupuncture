@@ -1,10 +1,11 @@
 import { FaYelp } from "react-icons/fa";
 import Link from "next/link";
+import { CLINIC_INFO, GOOGLE_MAPS_URL, YELP_URL } from "@/src/lib/seo";
 
 export default function Footer() {
   return (
     <footer className="bg-[#303030] text-white text-center w-full py-20 px-4 md:px-0">
-      <nav>
+      <nav aria-label="Footer Navigation">
         <ul className="list-none pl-0 m-0 mx-auto uppercase w-full block leading-[3rem] md:flex md:justify-between md:w-[25rem] md:leading-normal">
           <li>
             <Link
@@ -40,44 +41,48 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <h2 className="font-normal tracking-[0.1rem] text-[2rem] mt-12 mb-4 text-white">
-        <Link 
+      <h2 className="font-normal tracking-[0.1rem] text-[2rem] mt-12 text-white">
+        <Link
           href="/"
-          className="font-berkshire text-white no-underline font-baloo transition duration-300 hover:text-[#e08942]"
+          className="font-berkshire text-white no-underline transition duration-300 hover:text-[#e08942]"
         >
           Sun Wellness Acupuncture
         </Link>
       </h2>
-      <h3 className="font-ubuntu font-normal text-[1rem] my-[1em] text-white">
+      <p className="font-ubuntu font-normal text-[1rem] mb-[1em] text-white">
         Chinese Acupuncture &amp; Herbal Clinic
-      </h3>
-      <address className="font-baloo font-normal italic leading-[1.5rem] pt-8 text-white">
+      </p>
+      <address className="font-baloo font-normal italic leading-[1.6rem] pt-8 text-white">
         <a
           className="text-white no-underline transition duration-300 hover:text-[#e08942]"
-          href="tel:+13239331212"
+          href={CLINIC_INFO.phoneHref}
         >
-          (323) 933-1212
+          {CLINIC_INFO.phoneDisplay}
         </a>
         <br />
         <a
           className="text-white no-underline transition duration-300 hover:text-[#e08942]"
-          href="https://www.google.com/maps/place/3053+W+Olympic+Blvd,+Los+Angeles,+CA+90006/@34.0529052,-118.3042934,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2b87fd043ec0b:0x960a5de1071b4f5!8m2!3d34.0529052!4d-118.3017185!16s%2Fg%2F11b8v613f3?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
+          href={GOOGLE_MAPS_URL}
           target="_blank"
           rel="noopener noreferrer"
         >
           3053 W. Olympic Blvd. Suite 309
           <br />
           Los Angeles, CA 90006
+          <span className="sr-only"> (opens in a new tab)</span>
         </a>
+        <p className="not-italic text-white/80 text-sm mt-2">
+          {CLINIC_INFO.hoursDisplay}
+        </p>
       </address>
       <a
-        href="https://www.yelp.com/biz/sun-wellness-acupuncture-los-angeles"
+        href={YELP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Yelp"
-        className="inline-block p-2 mt-4 text-[red]"
+        aria-label="Sun Wellness Acupuncture on Yelp (opens in a new tab)"
+        className="inline-flex items-center justify-center min-w-11 min-h-11 mt-4 rounded-full text-white hover:text-[#e08942] transition-colors"
       >
-        <FaYelp />
+        <FaYelp aria-hidden="true" className="w-5 h-5" />
       </a>
     </footer>
   );

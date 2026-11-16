@@ -1,5 +1,8 @@
 'use client';
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaPhone } from 'react-icons/fa6';
 
 export default function HeroBanner() {
   const containerRef = useRef<HTMLElement>(null);
@@ -51,22 +54,54 @@ export default function HeroBanner() {
   return (
     <section 
       ref={containerRef}
-      className="relative h-screen w-full overflow-hidden isolate"
+      className="relative h-[85vh] min-h-[560px] w-full overflow-hidden isolate flex items-center justify-center px-6"
     >
       <div 
         ref={bgRef}
-        className="absolute -top-[20%] left-0 w-full h-[140%] bg-no-repeat bg-center bg-cover will-change-transform -z-10 bg-[linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('/images/acupuncture.webp')]"
-      />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white w-full z-10 [&_p]:[text-shadow:0_0_5px_black]">
-        <p className="font-baloo tracking-[0.12rem] text-[1.25rem] md:text-[2rem] my-[1em]">
-          Welcome
+        className="absolute -top-[20%] left-0 w-full h-[140%] will-change-transform -z-10"
+      >
+        <Image
+          src="/images/acupuncture.webp"
+          alt="Traditional acupuncture therapy at Sun Wellness Acupuncture in Los Angeles"
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-black/55" />
+      </div>
+
+      <div className="relative z-10 max-w-[900px] mx-auto text-center text-white">
+        <p className="font-baloo uppercase tracking-[0.2rem] text-sm md:text-base text-white/90 mb-3 drop-shadow">
+          Welcome to
         </p>
-        <p className="font-berkshire tracking-[0.3rem] text-[14vw] my-[3vh] md:text-[5rem] md:my-[5vh]">
-          Sun Wellness
+        <h1 className="my-2 mb-6">
+          <span className="block font-berkshire font-normal tracking-[0.2rem] text-[clamp(2.75rem,10vw,5.25rem)] leading-tight drop-shadow-md">
+            Sun Wellness
+          </span>
+          <span className="block font-baloo font-normal tracking-[0.12rem] text-[clamp(1.25rem,4.5vw,2rem)] text-white/95 mt-2 drop-shadow">
+            Chinese Acupuncture &amp; Herbal Clinic
+          </span>
+        </h1>
+        <p className="font-baloo text-base md:text-lg text-white/90 max-w-[640px] mx-auto mb-8 leading-relaxed drop-shadow">
+          Natural, drug-free healing in the heart of Los Angeles with over 25 years of clinical experience. PPO insurance accepted.
         </p>
-        <p className="font-baloo tracking-[0.12rem] text-[7vw] md:text-[2rem] my-[1em]">
-          Chinese Acupuncture and Herbal Clinic
-        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Link
+            href="/contact"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-[#c44d2b] border-2 border-[#c44d2b] py-3.5 px-8 text-white uppercase font-baloo font-semibold tracking-[0.08rem] no-underline transition duration-300 hover:bg-white hover:text-[#b54524] shadow-md"
+          >
+            Schedule a Visit
+          </Link>
+          <a
+            href="tel:+13239331212"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-full bg-black/35 backdrop-blur-sm border-2 border-white/85 py-3.5 px-8 text-white uppercase font-baloo font-semibold tracking-[0.08rem] no-underline transition duration-300 hover:bg-white hover:text-[#303030]"
+          >
+            <FaPhone aria-hidden="true" className="w-4 h-4" />
+            <span>(323) 933-1212</span>
+          </a>
+        </div>
       </div>
     </section>
   );

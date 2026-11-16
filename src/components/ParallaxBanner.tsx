@@ -1,13 +1,19 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 interface ParallaxBannerProps {
   title: string;
   imageSrc: string;
+  subtitle?: string;
 }
 
-export default function ParallaxBanner({ title, imageSrc }: ParallaxBannerProps) {
+export default function ParallaxBanner({
+  title,
+  imageSrc,
+  subtitle,
+}: ParallaxBannerProps) {
   const containerRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
 
@@ -53,18 +59,34 @@ export default function ParallaxBanner({ title, imageSrc }: ParallaxBannerProps)
   return (
     <section
       ref={containerRef}
-      className="relative h-[40vh] w-full overflow-hidden isolate"
+      className="relative h-[36vh] min-h-[260px] w-full overflow-hidden isolate flex items-center justify-center px-6"
     >
       <div
         ref={bgRef}
-        style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('${imageSrc}')`,
-        }}
-        className="absolute bottom-0 left-0 w-full h-[140%] bg-no-repeat bg-bottom bg-cover will-change-transform -z-10"
-      />
-      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white w-full z-10 font-ubuntu text-[3rem] md:text-[4rem] min-[913px]:text-[5rem] tracking-[0.15rem] font-bold m-0 [text-shadow:0_0_5px_black] pt-[8vh]">
-        {title}
-      </h2>
+        className="absolute bottom-0 left-0 w-full h-[140%] will-change-transform -z-10"
+      >
+        <Image
+          src={imageSrc}
+          alt=""
+          aria-hidden="true"
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-black/55" />
+      </div>
+
+      <div className="relative z-10 text-center text-white max-w-[800px] mx-auto">
+        <h1 className="font-ubuntu text-[2.5rem] md:text-[3.5rem] min-[913px]:text-[4.25rem] tracking-[0.12rem] font-bold m-0 drop-shadow-md">
+          {title}
+        </h1>
+        {subtitle && (
+          <p className="font-baloo text-base md:text-lg text-white/90 mt-2 tracking-wide drop-shadow">
+            {subtitle}
+          </p>
+        )}
+      </div>
     </section>
   );
 }
