@@ -40,9 +40,9 @@ const quickLinks = [
   },
   {
     href: "/contact",
-    title: "Location & PPO Insurance",
+    title: "Location & HMO Insurance",
     description:
-      "Find our Koreatown clinic hours, free garage parking details, and how to verify your PPO benefits.",
+      "Find our Koreatown clinic hours, free garage parking details, and how to verify your HMO benefits.",
   },
 ];
 

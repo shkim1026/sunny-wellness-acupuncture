@@ -62,7 +62,7 @@ const servicesList: ServiceItem[] = [
     title: "Cupping",
     iconSrc: "/images/icon-cupping.webp",
     paragraphs: [
-      "Cupping therapy uses heated suction cups placed on targeted areas of the body to promote deep blood circulation and release muscular tension. The skin beneath the cup may temporarily turn a deeper color, indicating areas of stagnant Qi and congestion; this discoloration naturally fades within a few days.",
+      "Cupping therapy uses suction cups placed on targeted areas of the body to promote deep blood circulation and release muscular tension. The skin beneath the cup may temporarily turn a deeper color, indicating areas of stagnant Qi and congestion; this discoloration naturally fades within a few days.",
       "It is widely used to relieve back, neck, and shoulder pain, reduce inflammation, improve circulation, and provide deep-tissue relaxation.",
     ],
   },

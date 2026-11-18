@@ -84,7 +84,7 @@ export default function HeroBanner() {
           </span>
         </h1>
         <p className="font-baloo text-base md:text-lg text-white/90 max-w-[640px] mx-auto mb-8 leading-relaxed drop-shadow">
-          Natural, drug-free healing in the heart of Los Angeles with over 25 years of clinical experience. PPO insurance accepted.
+          Natural, drug-free healing in the heart of Los Angeles with over 25 years of clinical experience. HMO insurance accepted.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

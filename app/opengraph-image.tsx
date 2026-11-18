@@ -61,7 +61,7 @@ export default function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            PPO Insurance Accepted
+            HMO Insurance Accepted
           </div>
         </div>
 
@@ -132,7 +132,7 @@ export default function OpenGraphImage() {
               color: "#e08942",
             }}
           >
-            (323) 933-1212 • Mon–Fri 10am–6pm
+            (323) 933-1212 • Mon–Fri 8am–5pm
           </div>
         </div>
       </div>

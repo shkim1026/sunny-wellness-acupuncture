@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     template: "%s | Sun Wellness Acupuncture Los Angeles",
   },
   description:
-    "Sun Wellness Acupuncture in Koreatown, Los Angeles. Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. offers over 25 years of experience in acupuncture, cupping, cosmetic facial acupuncture, Chinese herbal medicine, pain relief, and women's health. PPO insurance accepted.",
+    "Sun Wellness Acupuncture in Koreatown, Los Angeles. Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. offers over 25 years of experience in acupuncture, cupping, cosmetic facial acupuncture, Chinese herbal medicine, pain relief, and women's health. HMO insurance accepted.",
   keywords: [
     "Acupuncture Los Angeles",
     "Acupuncture Koreatown",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     "Cupping Therapy Koreatown",
     "Fertility Acupuncture Los Angeles",
     "Pain Relief Acupuncture LA",
-    "PPO Insurance Acupuncture Los Angeles",
+    "HMO Insurance Acupuncture Los Angeles",
   ],
   authors: [{ name: "Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac." }],
   creator: SITE_NAME,
@@ -71,14 +71,14 @@ export const metadata: Metadata = {
     title:
       "Sun Wellness Acupuncture | Chinese Acupuncture & Herbal Clinic in Los Angeles",
     description:
-      "Natural, drug-free healing in Koreatown, Los Angeles with Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. Specializing in pain management, women's health, fertility, digestion, and cosmetic acupuncture. PPO insurance accepted.",
+      "Natural, drug-free healing in Koreatown, Los Angeles with Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. Specializing in pain management, women's health, fertility, digestion, and cosmetic acupuncture. HMO insurance accepted.",
   },
   twitter: {
     card: "summary_large_image",
     title:
       "Sun Wellness Acupuncture | Chinese Acupuncture & Herbal Clinic in Los Angeles",
     description:
-      "Over 25 years of clinical experience in acupuncture, cupping, and Chinese herbal medicine in Koreatown, Los Angeles. PPO insurance accepted.",
+      "Over 25 years of clinical experience in acupuncture, cupping, and Chinese herbal medicine in Koreatown, Los Angeles. HMO insurance accepted.",
   },
   robots: {
     index: true,

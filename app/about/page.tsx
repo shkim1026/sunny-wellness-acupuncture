@@ -131,7 +131,7 @@ export default function About() {
               <div className="font-baloo text-[1.125rem] leading-[1.85rem] text-[#404040] space-y-5">
                 <p>
                   Sunny Sun-Eui Kim, Ph.D. / L.Ac., is an expert in Traditional
-                  Oriental Medicine. With over 20 years of clinical experience,
+                  Oriental Medicine. With over 25 years of clinical experience,
                   Dr. Kim has effectively treated patients with women&apos;s
                   health concerns including infertility, recurrent miscarriage,
                   menstrual disorders and cramps, ovarian cysts, uterine
@@ -192,12 +192,12 @@ export default function About() {
             </div>
 
             <h2 className="font-ubuntu font-bold text-[1.75rem] md:text-[2.25rem] mb-3">
-              PPO Health Insurance Accepted
+              HMO Health Insurance Accepted
             </h2>
 
             <p className="font-baloo text-[1.125rem] leading-[1.75rem] text-[#404040] mb-4">
               We accept <strong>Cash, Checks, Visa, and Mastercard</strong> for
-              patient visits and insurance co-pays. If you have PPO health
+              patient visits and insurance co-pays. If you have HMO health
               insurance and are unsure of your acupuncture coverage, please
               contact us—we will gladly verify your benefits for you.
             </p>

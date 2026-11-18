@@ -26,20 +26,20 @@ export const CLINIC_INFO = {
     latitude: 34.052872,
     longitude: -118.301718,
   },
-  hoursDisplay: "Mon – Fri: 10:00 AM – 6:00 PM",
-  openingHours: "Mo-Fr 10:00-18:00",
+  hoursDisplay: "Mon – Fri: 8:00 AM – 5:00 PM",
+  openingHours: "Mo-Fr 08:00-17:00",
 } as const;
 
 export const FAQ_ITEMS = [
   {
-    question: "Do you accept PPO health insurance for acupuncture?",
+    question: "Do you accept HMO health insurance for acupuncture?",
     answer:
-      "Yes, Sun Wellness Acupuncture accepts PPO health insurance plans. Contact us with your insurance ID number, full name, date of birth, and a copy of the front and back of your insurance card, and we will verify your acupuncture benefits before your first visit.",
+      "Yes, Sun Wellness Acupuncture accepts HMO health insurance plans. Contact us with your insurance ID number, full name, date of birth, and a copy of the front and back of your insurance card, and we will verify your acupuncture benefits before your first visit.",
   },
   {
     question: "What are your clinic hours and where are you located?",
     answer:
-      "We are open Monday through Friday from 10:00 AM to 6:00 PM. Our clinic is located at 3053 W. Olympic Blvd. Suite 309, Los Angeles, CA 90006 in Koreatown, with free patient parking available in the building garage.",
+      "We are open Monday through Friday from 8:00 AM to 5:00 PM. Our clinic is located at 3053 W. Olympic Blvd. Suite 309, Los Angeles, CA 90006 in Koreatown, with free patient parking available in the building garage.",
   },
   {
     question: "How long does an acupuncture session take?",
@@ -72,7 +72,7 @@ export function getMedicalClinicJsonLd() {
         email: CLINIC_INFO.email,
         priceRange: "$$",
         currenciesAccepted: "USD",
-        paymentAccepted: "Cash, Check, Visa, Mastercard, PPO Health Insurance",
+        paymentAccepted: "Cash, Check, Visa, Mastercard, HMO Health Insurance",
         image: [
           `${SITE_URL}/images/acupuncture.webp`,
           `${SITE_URL}/images/drkim.webp`,
@@ -80,7 +80,7 @@ export function getMedicalClinicJsonLd() {
         ],
         logo: `${SITE_URL}/icon.svg`,
         description:
-          "Sun Wellness Acupuncture in Koreatown, Los Angeles. Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. offers over 25 years of clinical experience in acupuncture, cupping, cosmetic facial acupuncture, and Chinese herbal medicine. PPO health insurance accepted.",
+          "Sun Wellness Acupuncture in Koreatown, Los Angeles. Dr. Sunny Sun-Eui Kim, Ph.D., L.Ac. offers over 25 years of clinical experience in acupuncture, cupping, cosmetic facial acupuncture, and Chinese herbal medicine. HMO health insurance accepted.",
         address: {
           "@type": "PostalAddress",
           streetAddress: CLINIC_INFO.address.streetAddress,
@@ -106,8 +106,8 @@ export function getMedicalClinicJsonLd() {
               "Thursday",
               "Friday",
             ],
-            opens: "10:00",
-            closes: "18:00",
+            opens: "08:00",
+            closes: "17:00",
           },
         ],
         amenityFeature: [

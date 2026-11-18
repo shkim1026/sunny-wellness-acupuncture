@@ -13,7 +13,7 @@ import { CLINIC_INFO, GOOGLE_MAPS_URL, SITE_URL } from "@/src/lib/seo";
 export const metadata: Metadata = {
   title: "Contact Us, Hours & Koreatown Location",
   description:
-    "Visit Sun Wellness Acupuncture at 3053 W. Olympic Blvd. Suite 309 in Koreatown, Los Angeles, CA 90006. Open Mon–Fri 10:00am–6:00pm. Call (323) 933-1212 to schedule an appointment or verify your PPO insurance.",
+    "Visit Sun Wellness Acupuncture at 3053 W. Olympic Blvd. Suite 309 in Koreatown, Los Angeles, CA 90006. Open Mon–Fri 8:00am–5:00pm. Call (323) 933-1212 to schedule an appointment or verify your HMO insurance.",
   alternates: {
     canonical: "/contact",
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title:
       "Contact Us, Hours & Koreatown Location | Sun Wellness Acupuncture",
     description:
-      "3053 W. Olympic Blvd. Suite 309, Los Angeles, CA 90006. Open Monday–Friday 10:00 AM – 6:00 PM. Free garage parking & PPO insurance accepted.",
+      "3053 W. Olympic Blvd. Suite 309, Los Angeles, CA 90006. Open Monday–Friday 8:00 AM – 5:00 PM. Free garage parking & HMO insurance accepted.",
     url: `${SITE_URL}/contact`,
   },
 };
@@ -93,7 +93,7 @@ export default function Contact() {
               </h2>
               <p className="font-baloo text-[1.125rem] leading-[1.75rem] text-[#454545] mb-8">
                 Call or email us to schedule an appointment, ask questions about
-                acupuncture or herbal medicine, or verify your PPO health
+                acupuncture or herbal medicine, or verify your HMO health
                 insurance benefits.
               </p>
 
@@ -160,7 +160,7 @@ export default function Contact() {
                     Monday – Friday
                   </p>
                   <p className="font-baloo text-[1.05rem] text-[#454545] leading-relaxed">
-                    10:00 AM – 6:00 PM
+                    8:00 AM – 5:00 PM
                   </p>
                 </div>
 
@@ -180,7 +180,7 @@ export default function Contact() {
               {/* Insurance Verification Box */}
               <div className="bg-[#faf8f5] rounded-2xl p-6 border border-[#e08942]/30">
                 <h3 className="font-ubuntu font-bold text-[1.2rem] text-[#303030] mb-2">
-                  Verifying Your PPO Health Insurance?
+                  Verifying Your HMO Health Insurance?
                 </h3>
                 <p className="font-baloo text-[1.05rem] text-[#454545] mb-4">
                   Email us at{" "}

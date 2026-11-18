@@ -280,7 +280,7 @@ export default function Home() {
                 Coverage &amp; Benefits
               </p>
               <h2 className="font-ubuntu font-bold text-[2rem] md:text-[2.5rem] mb-4">
-                PPO Health Insurance Accepted
+                HMO Health Insurance Accepted
               </h2>
               <p className="font-baloo text-[1.15rem] leading-[1.75rem] text-[#404040] mb-6">
                 Please contact us if you are not sure of your coverage. We will
